@@ -34,7 +34,7 @@ jobs:
         
   deploy:
     runs-on: ubuntu-latest
-    needs: [checkout, build]
+    needs: [test, build]
     steps:
       - name: Publish to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
