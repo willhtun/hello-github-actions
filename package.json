@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "This course will walk you through writing your first action and using it with a workflow file.",
   "main": "index.js",
+  "dependencies": {
+    "react-scripts": "2.1.3"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/willhtun/hello-github-actions/issues"
   },
-  "homepage": "https://github.com/willhtun/hello-github-actions#readme"
+  "homepage": "https://github.com/willhtun/hello-github-actions#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
