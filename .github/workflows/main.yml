@@ -20,12 +20,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo 'Starting workflow...'
+
+      - name: Build node project
+        run: npm run build
         
       - name: Publish to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
         with:
           domain: 'wh-hello-world.surge.sh'
-          project: '../../.'
+          project: './build'
           login: willhtun42@gmail.com
           token: 18e351239d2d78b16a791dd293626132
 
