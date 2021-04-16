@@ -19,7 +19,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: Starting workflow...
+        run: echo 'Starting workflow...'
         
       - name: Publish to surge.sh
         uses: dswistowski/surge-sh-action@v1.0.1
