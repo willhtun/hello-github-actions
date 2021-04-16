@@ -17,6 +17,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.22.1
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: ls -l
